@@ -14,8 +14,8 @@ class PlayLists extends Component {
           return (
             <div>
                 {
-                this.props.playlists.map(result =>
-                    <div>
+                this.props.playlists.map((result, i) =>
+                    <div  key={i}>
                         <Link to={`/playlist/${result.songs_type}`}>{result.songs_type}</Link>
                     </div>
                     
